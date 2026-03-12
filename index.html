@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Memory Lane Cam</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">MemoryLane Cam</div>
+
+<div class="nav-links">
+
+<a href="index.html">Home</a>
+<a href="reviews.html">Reviews</a>
+<a href="pricing.html">Pricing</a>
+<a href="gallery.html">Gallery</a>
+
+
+<a href="event.html" class="button">Set up your event</a>
+
+</div>
+
+</nav>
+
+<section class="hero">
+
+<h1>
+Disposable camera <br>
+for <span class="highlight" id="changing-word">parties</span>
+</h1>
+
+<p>
+Capture everyone's point-of-view using Memory Lane Cam — the digital
+disposable camera for events.
+</p>
+
+<div class="features">
+<div class="feature">✔ Unique way to capture memories</div>
+<div class="feature">✔ No App Downloads</div>
+<div class="feature">✔ Photos & Videos</div>
+</div>
+
+<div class="rating">
+★★★★★
+<div class="rating-text">
+Used by 9,000+ happy couples, parties and event organizers.
+</div>
+</div>
+
+<a class="cta" href="event.html">Get started today →</a>
+
+</section>
+
+<section class="why-us">
+
+<h2 class="why-title">Why Choose Memory Lane Cam?</h2>
+
+<div class="why-container">
+
+<div class="why-card">
+<h3>📷 Capture Every Moment</h3>
+<p>
+Guests can capture memories from their own perspective,
+creating a unique collection of photos and videos.
+</p>
+</div>
+
+<div class="why-card">
+<h3>⚡ No App Download</h3>
+<p>
+Participants can instantly upload photos using a simple
+link without installing any application.
+</p>
+</div>
+
+<div class="why-card">
+<h3>🎉 Perfect for Events</h3>
+<p>
+Ideal for weddings, parties, vacations, and celebrations
+where everyone can contribute to the memories.
+</p>
+</div>
+
+<div class="why-card">
+<h3>💾 Easy Memory Storage</h3>
+<p>
+All event photos are stored in one place and can be
+downloaded after the event ends.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="footer-container">
+
+<div>
+<h2>📷 Memory Lane Cam</h2>
+<p>Bringing back the magic of analog photography.</p>
+</div>
+
+<div class="footer-links">
+<h3>Quick Links</h3>
+<a href="index.html">Home</a>
+<a href="reviews.html">Reviews</a>
+<a href="pricing.html">Pricing</a>
+<a href="gallery.html">Gallery</a>
+<a href="event.html">Set Up Your Event</a>
+
+</div>
+
+<div class="footer-links">
+<h3>Support</h3>
+<a>Contact Us</a>
+<a>Shipping Info</a>
+<a>Returns</a>
+<a>Privacy Policy</a>
+</div>
+
+</div>
+
+<div class="copyright">
+©️ 2026 Memory Lane Cam. Made with ❤️
+</div>
+
+</footer>
+
+<script>
+
+const words = ["parties","events","holidays","weddings"];
+let i = 0;
+
+setInterval(()=>{
+i=(i+1)%words.length;
+document.getElementById("changing-word").textContent=words[i];
+},2000);
+
+</script>
+
+</body>
+</html>

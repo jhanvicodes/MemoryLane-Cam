@@ -1,0 +1,241 @@
+EVENTS    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Set Up Your Event</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">MemoryLane Cam</div>
+
+<div class="nav-links">
+
+<a href="index.html">Home</a>
+<a href="reviews.html">Reviews</a>
+<a href="pricing.html">Pricing</a>
+<a href="gallery.html">Gallery</a>
+
+<a class="button" href="event.html">Set up your event</a>
+
+</div>
+
+</nav>
+
+
+<section class="event-section">
+
+<h2>How many guests will attend your event? 👇</h2>
+
+<div class="guest-options">
+
+<button onclick="updatePlan(7)">7</button>
+<button onclick="updatePlan(25)">25</button>
+<button onclick="updatePlan(50)">50</button>
+<button onclick="updatePlan(100)">100</button>
+<button onclick="updatePlan(150)">150</button>
+<button onclick="updatePlan(250)">250</button>
+<button onclick="updatePlan(500)">500+</button>
+
+</div>
+
+
+<div class="event-card">
+
+<h1 id="planName">Free</h1>
+
+<div class="event-price" id="planPrice">₹0</div>
+
+<a class="event-btn">Let's create your event →</a>
+
+<hr>
+
+<h3>What is included?</h3>
+
+<ul id="planFeatures">
+
+<li>✔ Maximum of 7 guests can join your event</li>
+<li>✔ 1 year of storage within the app</li>
+<li>✔ Full album download after the event</li>
+<li>✔ Optional filter effects</li>
+<li>✔ Uploads from camera roll</li>
+<li>✔ Live slideshow</li>
+<li>✔ Up to 25 captures per guest</li>
+
+</ul>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<div class="footer-container">
+
+<div>
+<h2>📷 Memory Lane Cam</h2>
+<p>Bringing back the magic of analog photography.</p>
+</div>
+
+<div class="footer-links">
+<h3>Quick Links</h3>
+<a href="index.html">Home</a>
+<a href="reviews.html">Reviews</a>
+<a href="pricing.html">Pricing</a>
+<a href="gallery.html">Gallery</a>
+<a href="event.html">Set Up Your Event</a>
+
+</div>
+
+<div class="footer-links">
+<h3>Support</h3>
+<a>Contact Us</a>
+<a>Shipping Info</a>
+<a>Returns</a>
+<a>Privacy Policy</a>
+</div>
+
+</div>
+
+<div class="copyright">
+©️ 2026 Memory Lane Cam. Made with ❤️
+</div>
+
+</footer>
+
+
+<script>
+
+function updatePlan(guests){
+
+let planName = document.getElementById("planName");
+let planPrice = document.getElementById("planPrice");
+let planFeatures = document.getElementById("planFeatures");
+
+if(guests <= 7){
+
+planName.innerText = "Free";
+planPrice.innerText = "₹0";
+
+planFeatures.innerHTML = `
+<li>✔ Maximum of 7 guests can join your event</li>
+<li>✔ 1 year storage</li>
+<li>✔ Full album download</li>
+<li>✔ Filter effects</li>
+<li>✔ Live slideshow</li>
+<li>✔ 25 captures per guest</li>
+`;
+
+}
+
+else if(guests <= 25){
+
+planName.innerText = "Starter Event";
+planPrice.innerText = "₹149";
+
+planFeatures.innerHTML = `
+<li>✔ Up to 25 guests</li>
+<li>✔ Unlimited captures</li>
+<li>✔ Full album download</li>
+<li>✔ Photo filters</li>
+<li>✔ Live slideshow</li>
+<li>✔ Guest uploads</li>
+`;
+
+}
+
+else if(guests <= 50){
+
+planName.innerText = "Mega Starter Event";
+planPrice.innerText = "₹299";
+
+planFeatures.innerHTML = `
+<li>✔ Up to 50 guests</li>
+<li>✔ Unlimited captures</li>
+<li>✔ Full album download</li>
+<li>✔ Photo filters</li>
+<li>✔ Live slideshow</li>
+<li>✔ Guest uploads</li>
+`;
+
+}
+
+else if(guests <= 100){
+
+planName.innerText = "Party Pack";
+planPrice.innerText = "₹399";
+
+planFeatures.innerHTML = `
+<li>✔ Up to 100 guests</li>
+<li>✔ Unlimited captures</li>
+<li>✔ Custom event gallery</li>
+<li>✔ Photo filters</li>
+<li>✔ Live slideshow</li>
+<li>✔ Priority support</li>
+`;
+
+}
+
+else if(guests <= 150){
+
+planName.innerText = "Party Pack";
+planPrice.innerText = "₹699";
+
+planFeatures.innerHTML = `
+<li>✔ Up to 150 guests</li>
+<li>✔ Unlimited captures</li>
+<li>✔ Custom event gallery</li>
+<li>✔ Photo filters</li>
+<li>✔ Live slideshow</li>
+<li>✔ Priority support</li>
+`;
+
+}
+
+else if(guests <= 250){
+
+planName.innerText = "Mega Party Pack";
+planPrice.innerText = "₹999";
+
+planFeatures.innerHTML = `
+<li>✔ Up to 150 guests</li>
+<li>✔ Unlimited captures</li>
+<li>✔ Custom event gallery</li>
+<li>✔ Photo filters</li>
+<li>✔ Live slideshow</li>
+<li>✔ Priority support</li>
+`;
+
+}
+
+else{
+
+planName.innerText = "Mega Event";
+planPrice.innerText = "₹1499";
+
+planFeatures.innerHTML = `
+<li>✔ Up to 500 guests</li>
+<li>✔ Unlimited captures</li>
+<li>✔ Premium gallery</li>
+<li>✔ Custom branding</li>
+<li>✔ Live slideshow</li>
+<li>✔ Priority processing</li>
+`;
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
